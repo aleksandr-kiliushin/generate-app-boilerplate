@@ -1,12 +1,11 @@
 import React from "react"
 
-// import { Counter } from "./features/counter/Counter"
+import { Counter } from "./views/counter"
 
 export const App: React.FC = () => {
   return (
     <>
-      {/* <Counter /> */}
-      <h1>Some UI.</h1>
+      <Counter />
     </>
   )
 }
