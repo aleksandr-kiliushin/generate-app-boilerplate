@@ -17,13 +17,13 @@
     "noUnusedLocals": true,
     "noUnusedParameters": false,
     "paths": {
-      "#components/*": ["src/components/*"],
-      "#machines/*": ["src/machines/*"],
-      "#mocks/*": ["src/mocks/*"],
-      "#styles/*": ["src/styles/*"],
-      "#types/*": ["src/types/*"],
-      "#utils/*": ["src/utils/*"],
-      "#views/*": ["src/views/*"]
+      // "#components/*": ["src/components/*"],
+      // "#machines/*": ["src/machines/*"],
+      // "#mocks/*": ["src/mocks/*"],
+      // "#styles/*": ["src/styles/*"],
+      // "#types/*": ["src/types/*"],
+      // "#utils/*": ["src/utils/*"],
+      // "#views/*": ["src/views/*"]
     },
     "removeComments": true,
     "resolveJsonModule": true,
