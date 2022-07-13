@@ -29,6 +29,8 @@ const main = () => {
 
   fs.cpSync(srcDirPath, destDirPath, { recursive: true })
 
+  // TODO: Change "name": "typescript-react" in package.json with the provided app name.
+
   console.log("Template created successfully.")
 }
 
