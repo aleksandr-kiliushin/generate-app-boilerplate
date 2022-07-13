@@ -1,6 +1,7 @@
-import { App } from "./App"
 import React from "react"
 import ReactDomClient from "react-dom/client"
+
+import { App } from "./App"
 
 let rootNode = document.querySelector("#root")
 if (rootNode === null) {
