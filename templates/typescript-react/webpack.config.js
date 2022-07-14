@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 module.exports = {
   devServer: {
     historyApiFallback: true,
-    port: 6006,
+    port: 3666,
     proxy: {
       "/api": "http://localhost:8180",
     },
