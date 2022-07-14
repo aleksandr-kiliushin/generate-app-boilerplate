@@ -2,6 +2,7 @@
 const webpack = require("webpack")
 const path = require("path")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
+const { TsconfigPathsPlugin } = require("tsconfig-paths-webpack-plugin")
 
 module.exports = {
   devServer: {
@@ -77,5 +78,11 @@ module.exports = {
       // "#views": path.resolve(process.cwd(), "src/views"),
     },
     extensions: [".css", ".js", ".ts", ".tsx"],
+    plugins: [
+      new TsconfigPathsPlugin({
+        configFile: "./tsconfig.json",
+        extensions: [".ts", ".tsx"],
+      }),
+    ],
   },
 }
