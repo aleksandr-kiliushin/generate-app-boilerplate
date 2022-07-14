@@ -4,7 +4,7 @@ import React from "react"
 import { Provider } from "react-redux"
 import { unstable_HistoryRouter as HistoryRouter } from "react-router-dom"
 
-import { store } from "#store/index"
+import { createStore } from "#store/index"
 
 import { IRender } from "./types"
 
@@ -16,7 +16,7 @@ export const render: IRender = (component, options) => {
 
     return (
       <HistoryRouter history={history}>
-        <Provider store={store}>{children}</Provider>
+        <Provider store={createStore()}>{children}</Provider>
       </HistoryRouter>
     )
   }

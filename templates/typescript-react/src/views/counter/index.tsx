@@ -28,7 +28,9 @@ export const Counter: React.FC = () => {
         <Button aria-label="Decrement value" onClick={() => dispatch(decrement())}>
           -
         </Button>
-        <span className={classes.value}>{count}</span>
+        <span className={classes.value} title="Counter value">
+          {count}
+        </span>
         <Button aria-label="Increment value" onClick={() => dispatch(increment())}>
           +
         </Button>
@@ -40,9 +42,9 @@ export const Counter: React.FC = () => {
           value={incrementAmount}
           onChange={(e) => setIncrementAmount(e.target.value)}
         />
-        <Button onClick={() => dispatch(incrementByAmount(incrementValue))}>Add Amount</Button>
-        <Button onClick={() => dispatch(incrementAsync(incrementValue))}>Add Async</Button>
-        <Button onClick={() => dispatch(incrementIfOdd(incrementValue))}>Add If Odd</Button>
+        <Button onClick={() => dispatch(incrementByAmount(incrementValue))}>Add amount</Button>
+        <Button onClick={() => dispatch(incrementAsync(incrementValue))}>Add async</Button>
+        <Button onClick={() => dispatch(incrementIfOdd(incrementValue))}>Add if odd</Button>
       </div>
     </>
   )

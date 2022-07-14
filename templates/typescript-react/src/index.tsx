@@ -3,7 +3,7 @@ import ReactDomClient from "react-dom/client"
 import { Provider } from "react-redux"
 import { BrowserRouter } from "react-router-dom"
 
-import { store } from "#store/index"
+import { createStore } from "#store/index"
 
 import { Views } from "./views"
 
@@ -14,6 +14,8 @@ if (rootNode === null) {
 }
 
 const root = ReactDomClient.createRoot(rootNode)
+
+const store = createStore()
 
 root.render(
   <React.StrictMode>
