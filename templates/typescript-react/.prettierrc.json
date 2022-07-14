@@ -1,6 +1,5 @@
 {
   "arrowParens": "always",
-  "bracketSameLine": false,
   "bracketSpacing": true,
   "importOrder": ["^#", "\\.\\/(?!.+\\.css)", "\\.css$"],
   "importOrderSeparation": true,
