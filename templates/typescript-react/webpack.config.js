@@ -69,15 +69,7 @@ module.exports = {
     }),
   ],
   resolve: {
-    alias: {
-      // "#components": path.resolve(process.cwd(), "src/components"),
-      // "#machines": path.resolve(process.cwd(), "src/machines"),
-      // "#mocks": path.resolve(process.cwd(), "src/mocks"),
-      // "#styles": path.resolve(process.cwd(), "src/styles"),
-      // "#utils": path.resolve(process.cwd(), "src/utils"),
-      // "#views": path.resolve(process.cwd(), "src/views"),
-    },
-    extensions: [".css", ".js", ".ts", ".tsx"],
+    extensions: [".ts", ".tsx"],
     plugins: [
       new TsconfigPathsPlugin({
         configFile: "./tsconfig.json",

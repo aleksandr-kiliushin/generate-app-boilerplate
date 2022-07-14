@@ -8,9 +8,9 @@ import {
   incrementByAmount,
   incrementIfOdd,
   selectCount,
-} from "../../store/counterSlice"
-import { useAppDispatch } from "../../utils/hooks/useAppDispatch"
-import { useAppSelector } from "../../utils/hooks/useAppSelector"
+} from "#store/counterSlice"
+import { useAppDispatch } from "#utils/hooks/useAppDispatch"
+import { useAppSelector } from "#utils/hooks/useAppSelector"
 import classes from "./Counter.module.scss"
 
 export const Counter: React.FC = () => {
