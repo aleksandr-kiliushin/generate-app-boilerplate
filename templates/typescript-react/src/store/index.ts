@@ -10,6 +10,7 @@ export const createStore = () => {
   })
 }
 
-export type AppDispatch = ReturnType<typeof createStore>["dispatch"]
-export type RootState = ReturnType<ReturnType<typeof createStore>["getState"]>
+type IStore = ReturnType<typeof createStore>
+export type AppDispatch = IStore["dispatch"]
+export type RootState = ReturnType<IStore["getState"]>
 export type AppThunk<ReturnType = void> = ThunkAction<ReturnType, RootState, unknown, Action<string>>
