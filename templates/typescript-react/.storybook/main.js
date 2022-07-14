@@ -1,6 +1,6 @@
-import webpackConfig from "../webpack.config.js"
+const webpackConfig = require("../webpack.config.js")
 
-const config = {
+module.exports = {
   addons: ["@storybook/addon-essentials", "@storybook/addon-interactions", "@storybook/addon-links"],
   core: {
     builder: "@storybook/builder-webpack5",
@@ -21,5 +21,3 @@ const config = {
     }
   },
 }
-
-export default config
