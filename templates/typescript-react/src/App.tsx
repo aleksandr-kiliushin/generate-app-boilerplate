@@ -1,9 +1,9 @@
-import { Navbar } from "./components/Navbar"
 import React from "react"
+import { Route, Routes } from "react-router-dom"
 
+import { Navbar } from "./components/Navbar"
 import { Counter } from "./views/counter"
 import { Home } from "./views/home"
-import { Route, Routes } from "react-router-dom"
 
 export const App: React.FC = () => {
   return (

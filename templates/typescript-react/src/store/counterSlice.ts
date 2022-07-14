@@ -1,5 +1,6 @@
-import { RootState, AppThunk } from "./index"
-import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit"
+import { PayloadAction, createAsyncThunk, createSlice } from "@reduxjs/toolkit"
+
+import { AppThunk, RootState } from "./index"
 
 const fetchCount = ({ amount }: { amount: number }) => {
   return new Promise<{ data: number }>((resolve) => {

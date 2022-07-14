@@ -1,18 +1,17 @@
 import React, { useState } from "react"
 
-import { useAppSelector } from "../../utils/hooks/useAppSelector"
-import { useAppDispatch } from "../../utils/hooks/useAppDispatch"
+import { Button } from "../../components/Button"
 import {
   decrement,
   increment,
-  incrementByAmount,
   incrementAsync,
+  incrementByAmount,
   incrementIfOdd,
   selectCount,
 } from "../../store/counterSlice"
-
+import { useAppDispatch } from "../../utils/hooks/useAppDispatch"
+import { useAppSelector } from "../../utils/hooks/useAppSelector"
 import classes from "./Counter.module.scss"
-import { Button } from "../../components/Button"
 
 export const Counter: React.FC = () => {
   const count = useAppSelector(selectCount)
