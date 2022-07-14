@@ -1,8 +1,10 @@
-module.exports = {
-  stories: ["../src/**/*.stories.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
+const config = {
   addons: ["@storybook/addon-links", "@storybook/addon-essentials", "@storybook/addon-interactions"],
-  framework: "@storybook/react",
   core: {
     builder: "@storybook/builder-webpack5",
   },
+  framework: "@storybook/react",
+  stories: ["../src/**/*.stories.tsx"],
 }
+
+export default config
