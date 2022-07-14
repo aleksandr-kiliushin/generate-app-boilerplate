@@ -57,7 +57,7 @@
     "build-storybook": "build-storybook",
     "check-types:watch": "tsc --noEmit --watch",
     "dev": "MODE=development npx webpack serve",
-    "lint": "eslint src/**/*.{scss,ts,tsx}",
+    "lint": "eslint src/**/*.{ts,tsx}",
     "prettier": "prettier --write 'src/**/*.{scss,ts,tsx}'",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
