@@ -5,7 +5,7 @@ import { Navbar } from "#components/Navbar"
 import { Counter } from "#views/counter"
 import { Home } from "#views/home"
 
-export const App: React.FC = () => {
+export const Views: React.FC = () => {
   return (
     <>
       <Navbar />
