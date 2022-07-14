@@ -15,6 +15,8 @@ const AllTheProviders: React.FC<React.PropsWithChildren> = ({ children }) => {
   )
 }
 
-export const render = (ui: React.ReactElement, options?: Omit<RenderOptions, "wrapper">): RenderResult => {
+type IRender = (ui: React.ReactElement, options?: Omit<RenderOptions, "wrapper">) => RenderResult
+
+export const render: IRender = (ui, options): RenderResult => {
   return rtlRender(ui, { wrapper: AllTheProviders, ...options })
 }
