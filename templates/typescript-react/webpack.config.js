@@ -69,7 +69,7 @@ module.exports = {
     }),
   ],
   resolve: {
-    extensions: [".ts", ".tsx"],
+    extensions: [".js", ".ts", ".tsx"],
     plugins: [
       new TsconfigPathsPlugin({
         configFile: "./tsconfig.json",
