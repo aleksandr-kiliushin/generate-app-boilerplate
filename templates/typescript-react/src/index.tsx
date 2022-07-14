@@ -3,8 +3,9 @@ import ReactDomClient from "react-dom/client"
 import { Provider } from "react-redux"
 import { BrowserRouter } from "react-router-dom"
 
-import { Views } from "./views"
 import { store } from "#store/index"
+
+import { Views } from "./views"
 
 let rootNode = document.querySelector("#root")
 if (rootNode === null) {

@@ -1,6 +1,6 @@
 import { RenderOptions as IRtlRenderOptions, RenderResult as IRtlRenderResult } from "@testing-library/react"
-import React from "react"
 import { BrowserHistory } from "history"
+import React from "react"
 
 interface IRenderResult extends IRtlRenderResult {
   history: BrowserHistory

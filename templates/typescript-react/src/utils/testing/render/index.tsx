@@ -1,9 +1,11 @@
-import { store } from "#store/index"
 import { render as rtlRender } from "@testing-library/react"
+import { createBrowserHistory } from "history"
 import React from "react"
 import { Provider } from "react-redux"
 import { unstable_HistoryRouter as HistoryRouter } from "react-router-dom"
-import { createBrowserHistory } from "history"
+
+import { store } from "#store/index"
+
 import { IRender } from "./types"
 
 export const render: IRender = (component, options) => {
