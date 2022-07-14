@@ -31,7 +31,7 @@ const main = () => {
 
   // TODO: Change "name": "typescript-react" in package.json with the provided app name.
 
-  console.log("Template created successfully.")
+  console.log(`App "${appName}" successfully created using the "${templateName}" template.`)
 }
 
 main()
