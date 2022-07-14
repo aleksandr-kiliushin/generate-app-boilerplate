@@ -14,7 +14,7 @@ Available templates: [typescript-react].`
     )
     return
   }
-  const templateName = templateNameFlag.slice(14)
+  const templateName = templateNameFlag.slice(9)
 
   const appNameFlag = flags.find((aFlag) => aFlag.startsWith("app-name="))
   if (appNameFlag === undefined) {
