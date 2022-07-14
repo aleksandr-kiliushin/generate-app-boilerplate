@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  column-gap: 4px;
+}
+
+.navbar a {
+  color: cadetblue;
+  text-decoration: overline;
+}
+
+.navbar a:hover {
+  color: darkgreen;
+  text-decoration: underline;
+}

@@ -14,7 +14,7 @@ export default {
     },
   },
   component: Button,
-  title: "My components/Button",
+  title: "Button",
 } as ComponentMeta<typeof Button>
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
