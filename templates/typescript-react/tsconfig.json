@@ -17,13 +17,10 @@
     "noUnusedLocals": true,
     "noUnusedParameters": false,
     "paths": {
-      // "#components/*": ["src/components/*"],
-      // "#machines/*": ["src/machines/*"],
-      // "#mocks/*": ["src/mocks/*"],
-      // "#styles/*": ["src/styles/*"],
-      // "#types/*": ["src/types/*"],
-      // "#utils/*": ["src/utils/*"],
-      // "#views/*": ["src/views/*"]
+      "#components/*": ["src/components/*"],
+      "#store/*": ["src/store/*"],
+      "#utils/*": ["src/utils/*"],
+      "#views/*": ["src/views/*"]
     },
     "removeComments": true,
     "resolveJsonModule": true,
@@ -33,7 +30,6 @@
     "strictNullChecks": true,
     "suppressExcessPropertyErrors": false,
     "target": "es6"
-    // "types": ["@testing-library/jest-dom", "cypress", "jest"]
   },
   "exclude": ["node_modules", "dist"],
   "files": ["declarations.d.ts"],
