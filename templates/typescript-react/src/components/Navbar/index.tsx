@@ -8,6 +8,7 @@ export const Navbar: React.FC = () => {
     <nav className={classes.navbar}>
       <Link to="/">Home</Link>
       <Link to="/counter">Counter</Link>
+      <Link to="/profile">Profile</Link>
     </nav>
   )
 }
