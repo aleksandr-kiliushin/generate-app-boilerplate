@@ -1,7 +1,8 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react"
 import React from "react"
 
-import { Navbar } from "./index"
+// TODO: Remove alias import.
+import { Navbar } from "#components/Navbar"
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {

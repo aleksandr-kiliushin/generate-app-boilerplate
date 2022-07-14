@@ -3,7 +3,8 @@ import { ComponentMeta, ComponentStory } from "@storybook/react"
 import { userEvent, waitFor, within } from "@storybook/testing-library"
 import React from "react"
 
-import { Button } from "./index"
+// TODO: Remove alias import.
+import { Button } from "#components/Button"
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {

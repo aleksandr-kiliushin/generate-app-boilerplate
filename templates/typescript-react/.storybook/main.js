@@ -7,17 +7,17 @@ module.exports = {
   },
   framework: "@storybook/react",
   stories: ["../src/**/*.stories.tsx"],
-  webpackFinal: async (config) => {
+  webpackFinal: async (defaultStorybookWebpackConfig) => {
     return {
-      ...config,
+      ...defaultStorybookWebpackConfig,
       module: {
-        ...config.module,
+        ...defaultStorybookWebpackConfig.module,
         rules: webpackConfig.module.rules,
       },
-      // TODO: Add TS module resolution.
-      // Maybe it should be added only to the core webpack config.
-      // And here it will be added using a new piece of spreading in `webpackFinal`.
-      // https://storybook.js.org/docs/react/builders/webpack#typescript-module-resolution
+      resolve: {
+        ...defaultStorybookWebpackConfig.resolve,
+        plugins: [...(defaultStorybookWebpackConfig.resolve.plugins ?? []), ...webpackConfig.resolve.plugins],
+      },
     }
   },
 }
