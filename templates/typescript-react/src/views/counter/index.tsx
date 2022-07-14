@@ -21,7 +21,8 @@ export const Counter: React.FC = () => {
   const incrementValue = Number(incrementAmount) || 0
 
   return (
-    <div>
+    <>
+      <h1>Welcome to counter</h1>
       <div className={classes.row}>
         <Button aria-label="Decrement value" onClick={() => dispatch(decrement())}>
           -
@@ -42,6 +43,6 @@ export const Counter: React.FC = () => {
         <Button onClick={() => dispatch(incrementAsync(incrementValue))}>Add Async</Button>
         <Button onClick={() => dispatch(incrementIfOdd(incrementValue))}>Add If Odd</Button>
       </div>
-    </div>
+    </>
   )
 }
