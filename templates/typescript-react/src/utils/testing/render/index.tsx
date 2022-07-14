@@ -4,7 +4,7 @@ import React from "react"
 import { Provider } from "react-redux"
 import { unstable_HistoryRouter as HistoryRouter } from "react-router-dom"
 
-import { createStore, IStore } from "#store/index"
+import { IStore, createStore } from "#store/index"
 
 import { IRender } from "./types"
 
