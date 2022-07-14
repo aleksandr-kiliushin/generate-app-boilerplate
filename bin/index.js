@@ -9,7 +9,7 @@ const main = () => {
   const templateNameFlag = flags.find((aFlag) => aFlag.startsWith("template-name="))
   if (templateNameFlag === undefined) {
     console.error(
-      `Template name is not provided. Example: \`npx starter-boilerplate template-name=typescript-react app-name=my-beautiful-app\`.
+      `Template name is not provided. Example: \`npx generate-app-boilerplate template-name=typescript-react app-name=my-beautiful-app\`.
 Available templates: [typescript-react].`
     )
     return
@@ -19,7 +19,7 @@ Available templates: [typescript-react].`
   const appNameFlag = flags.find((aFlag) => aFlag.startsWith("app-name="))
   if (appNameFlag === undefined) {
     console.error(
-      "App name is not provided. Example: `npx starter-boilerplate template-name=typescript-react app-name=my-beautiful-app`."
+      "App name is not provided. Example: `npx generate-app-boilerplate template-name=typescript-react app-name=my-beautiful-app`."
     )
     return
   }

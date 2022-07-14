@@ -1,20 +1,20 @@
 {
   "author": "aleksandr-kiliushin",
   "bin": {
-    "starter-boilerplate": "bin/index.js"
+    "generate-app-boilerplate": "bin/index.js"
   },
   "bugs": {
-    "url": "https://github.com/aleksandr-kiliushin/starter-boilerplate/issues"
+    "url": "https://github.com/aleksandr-kiliushin/generate-app-boilerplate/issues"
   },
   "description": "",
-  "homepage": "https://github.com/aleksandr-kiliushin/starter-boilerplate#readme",
+  "homepage": "https://github.com/aleksandr-kiliushin/generate-app-boilerplate#readme",
   "keywords": [],
   "license": "ISC",
   "main": "index.js",
-  "name": "starter-boilerplate",
+  "name": "generate-app-boilerplate",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aleksandr-kiliushin/starter-boilerplate.git"
+    "url": "git+https://github.com/aleksandr-kiliushin/generate-app-boilerplate.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
