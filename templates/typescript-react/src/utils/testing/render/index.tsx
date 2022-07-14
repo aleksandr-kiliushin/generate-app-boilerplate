@@ -1,22 +1,27 @@
 import { render as rtlRender } from "@testing-library/react"
-import { createBrowserHistory } from "history"
+import { BrowserHistory, createBrowserHistory } from "history"
 import React from "react"
 import { Provider } from "react-redux"
 import { unstable_HistoryRouter as HistoryRouter } from "react-router-dom"
 
-import { createStore } from "#store/index"
+import { createStore, IStore } from "#store/index"
 
 import { IRender } from "./types"
 
-export const render: IRender = (component, options) => {
-  const history = createBrowserHistory()
+let history: BrowserHistory
+let store: IStore
+beforeEach(() => {
+  history = createBrowserHistory()
+  store = createStore()
+})
 
+export const render: IRender = (component, options) => {
   const AllTheProviders: React.FC<React.PropsWithChildren> = ({ children }) => {
     history.push(options?.initialUrl ?? "/")
 
     return (
       <HistoryRouter history={history}>
-        <Provider store={createStore()}>{children}</Provider>
+        <Provider store={store}>{children}</Provider>
       </HistoryRouter>
     )
   }
