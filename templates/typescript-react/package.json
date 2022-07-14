@@ -52,7 +52,7 @@
     "whatwg-fetch": "3.6.2"
   },
   "license": "ISC",
-  "name": "%APPLICATION-NAME%",
+  "name": "%APP-NAME%",
   "scripts": {
     "build-storybook": "build-storybook",
     "check-types:watch": "tsc --noEmit --watch",

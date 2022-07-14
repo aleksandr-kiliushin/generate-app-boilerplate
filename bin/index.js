@@ -1,5 +1,6 @@
 #! /usr/bin/env node
 const fs = require("fs")
+const os = require("os")
 const path = require("path")
 
 const main = () => {
@@ -9,7 +10,7 @@ const main = () => {
   if (templateNameFlag === undefined) {
     console.error(
       `Template name is not provided. Example: \`npx starter-boilerplate template-name=typescript-react app-name=my-beautiful-app\`.
-	Available templates: [typescript-react].`
+Available templates: [typescript-react].`
     )
     return
   }
@@ -29,7 +30,12 @@ const main = () => {
 
   fs.cpSync(srcDirPath, destDirPath, { recursive: true })
 
-  // TODO: Change "name": "typescript-react" in package.json with the provided app name.
+  const packageJsonPath = path.join(process.cwd(), appName, "package.json")
+  const packageJsonContent = fs.readFileSync(packageJsonPath, { encoding: "utf-8" })
+  const packageJsonPersonalizedContent = packageJsonContent
+    .replace("%USERNAME%", os.userInfo().username)
+    .replace("%APP-NAME%", appName)
+  fs.writeFileSync(packageJsonPath, packageJsonPersonalizedContent)
 
   console.log(`App "${appName}" successfully created using the "${templateName}" template.`)
 }
