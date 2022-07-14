@@ -12,6 +12,7 @@ import {
 } from "../../store/counterSlice"
 
 import classes from "./Counter.module.scss"
+import { Button } from "../../components/Button"
 
 export const Counter: React.FC = () => {
   const count = useAppSelector(selectCount)
@@ -23,13 +24,13 @@ export const Counter: React.FC = () => {
   return (
     <div>
       <div className={classes.row}>
-        <button className={classes.button} aria-label="Decrement value" onClick={() => dispatch(decrement())}>
+        <Button aria-label="Decrement value" onClick={() => dispatch(decrement())}>
           -
-        </button>
+        </Button>
         <span className={classes.value}>{count}</span>
-        <button className={classes.button} aria-label="Increment value" onClick={() => dispatch(increment())}>
+        <Button aria-label="Increment value" onClick={() => dispatch(increment())}>
           +
-        </button>
+        </Button>
       </div>
       <div className={classes.row}>
         <input
@@ -38,15 +39,9 @@ export const Counter: React.FC = () => {
           value={incrementAmount}
           onChange={(e) => setIncrementAmount(e.target.value)}
         />
-        <button className={classes.button} onClick={() => dispatch(incrementByAmount(incrementValue))}>
-          Add Amount
-        </button>
-        <button className={classes.asyncButton} onClick={() => dispatch(incrementAsync(incrementValue))}>
-          Add Async
-        </button>
-        <button className={classes.button} onClick={() => dispatch(incrementIfOdd(incrementValue))}>
-          Add If Odd
-        </button>
+        <Button onClick={() => dispatch(incrementByAmount(incrementValue))}>Add Amount</Button>
+        <Button onClick={() => dispatch(incrementAsync(incrementValue))}>Add Async</Button>
+        <Button onClick={() => dispatch(incrementIfOdd(incrementValue))}>Add If Odd</Button>
       </div>
     </div>
   )
